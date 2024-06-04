@@ -4,43 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>greenshop</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <button
-      class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded"
-      data-toggle="modal"
-      data-target="#exampleModal"
-    >
-      Launch demo modal
+  <body class="grid place-items-center h-screen">
+    <button id="open-modal-btn" class="px-4 py-2 rounded bg-orange text-white">
+      Open Modal
     </button>
-
-    <!-- Modal -->
-    <div id="exampleModal" class="modal modal-lg">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- Modal body content -->
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+    <div id="modal-wrapper" class="fixed z-10 inset-0 hidden">
+      <div
+        class="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-75 transition-all"
+      >
+      <div class="flex justify-center items-center flex-col bg-white w-2/4">
+          <button class="bg-[#f4faf5] w-[100%]"><img id="close-modal-btn" class="cursor-pointer scroll-p-8 hover:scroll-p-0" src="./image/X.png" alt="x bor"></button>
+          <div class="w-full flex justify-center flex-col items-center">
+            <div class="flex flex-col items-center gap-4 items-center bg-[#f4faf5] w-[100%] p-2">
+              <img src="./image/thank-you 1.png" alt="pochta rasm bor">
+              <p>Your order has been received</p>
+            </div>
+            <hr>
+            <div class="flex justify-between  gap-20 py-2">
+              <ol class="w-1/4 border-y-stone-950">
+                <li class="">Order Number</li>
+                <li class="font-sans">19586687</li>
+              </ol>
+              <ol class="w-1/4 border-l-rose-950">
+                <li>Order Number</li>
+                <li>19586687</li>
+              </ol>
+              <ol class="w-1/4 border-r-rose-950">
+                <li>Order Number</li>
+                <li>19586687</li>
+              </ol>
+              <ol class="w-1/4 border-l-rose-950">
+                <li>Order Number</li>
+                <li>19586687</li>
+              </ol>
+              <hr>
+            </div>
+            <div>
+              <h1>Order Details</h1>
+              <div class="w-[725px] flex justify-between">
+                <ol class="w-[25%]">
+                  <li>Products</li>
+                </ol>
+                <ol class="w-[50%] flex justify-between items-center">
+                    <li>Qty</li>
+                    <li>Subtotal</li>
+                </ol>
+              </div>
+              <hr>
+            </div>
+            <hr>
+            <div>
+              <div>
+                <img src="./image/image 11.png" alt="gul rasm bor">
+                <ol>
+                  <li>Barberton Daisy</li>
+                  <li>SKU: 1995751877966</li>
+                </ol>
+              </div>
+              <div></div>
+            </div>
+            <hr>
           </div>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
