@@ -27,6 +27,8 @@ module.exports = {
     sans: ['Graphik', 'sans-serif'],
     serif: ['Merriweather', 'serif'],
   },
-  plugins: [],
+  plugins: {
+    tailwindcss: { config: './tailwindcss-config.js' },
+  },
 }
 
