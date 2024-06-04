@@ -7,85 +7,109 @@
     <link rel="stylesheet" href="./output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="grid place-items-center h-screen">
-    <button id="open-modal-btn" class="px-4 py-2 rounded bg-orange text-white">
-      Open Modal
-    </button>
-    <div id="modal-wrapper" class="fixed z-10 inset-0 hidden">
-      <div
-        class="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-75 transition-all"
+  <body>
+    <div class="grid place-items-center h-screen">
+      <button
+        id="open-modal-btn"
+        class="px-4 py-2 rounded bg-orange text-white"
       >
-      <div class="flex justify-center items-center flex-col bg-white w-2/4">
-          <button class="bg-[#f4faf5] w-[100%]"><img id="close-modal-btn" class="cursor-pointer scroll-p-8 hover:scroll-p-0" src="./image/X.png" alt="x bor"></button>
-          <div class="w-full flex justify-center flex-col items-center">
-            <div class="flex flex-col items-center gap-4 items-center bg-[#f4faf5] w-[100%] p-2">
-              <img src="./image/thank-you 1.png" alt="pochta rasm bor">
-              <p>Your order has been received</p>
-            </div>
-            <hr>
-            <div class="flex justify-between  gap-20 py-2">
-              <ol class="w-1/4 border-y-stone-950">
-                <li class="">Order Number</li>
-                <li class="font-sans">19586687</li>
-              </ol>
-              <ol class="w-1/4 border-l-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <ol class="w-1/4 border-r-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <ol class="w-1/4 border-l-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <hr>
-            </div>
-            <div class="flex justify-between  gap-20 py-2">
-              <ol class="w-1/4 border-y-stone-950">
-                <li class="">Order Number</li>
-                <li class="font-sans">19586687</li>
-              </ol>
-              <ol class="w-1/4 border-l-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <ol class="w-1/4 border-r-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <ol class="w-1/4 border-l-rose-950">
-                <li>Order Number</li>
-                <li>19586687</li>
-              </ol>
-              <hr>
-            </div>
-            <div>
-              <h1>Order Details</h1>
-              <div class="w-[725px] flex justify-between">
-                <ol class="w-[25%]">
-                  <li>Products</li>
+        Open Modal
+      </button>
+      <div id="modal-wrapper" class="fixed z-10 inset-0 hidden">
+        <div
+          class="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-75 transition-all"
+        >
+          <div class="flex justify-center items-center flex-col bg-white w-2/4">
+            <button class="bg-[#f4faf5] w-[100%]">
+              <img
+                id="close-modal-btn"
+                class="cursor-pointer scroll-p-8 hover:scroll-p-0"
+                src="./image/X.png"
+                alt="x bor"
+              />
+            </button>
+            <div class="w-full flex justify-center flex-col items-center">
+              <div
+                class="flex flex-col items-center gap-4 bg-[#f4faf5] w-[100%] p-2"
+              >
+                <img src="./image/thank-you 1.png" alt="pochta rasm bor" />
+                <p>Your order has been received</p>
+              </div>
+              <hr />
+              <div class="flex items-center flex-wrap justify-between w-[80%] gap-4 px-0 mx-auto py-2">
+                <ol class="w-[150px]">
+                  <li class="">Order Number</li>
+                  <li class="">19586687</li>
                 </ol>
-                <ol class="w-[50%] flex justify-between items-center">
+                <ol class="w-[150px]">
+                  <li>Date</li>
+                  <li>15 Sep, 2021</li>
+                </ol>
+                <ol class="w-[150px]">
+                  <li>Total</li>
+                  <li>2,699.00</li>
+                </ol>
+                <ol class="w-[150px]">
+                  <li>Payment Method</li>
+                  <li>Cash on delivery</li>
+                </ol>
+                <hr />
+              </div>
+              <div class="w-[80%] mx-auto">
+                <h1>Order Details</h1>
+                <div class="w-[100%] mx-auto mx-0 flex justify-between items-center flex-wrap">
+                  <ol class="w-[250px]">
+                    <li>Products</li>
+                  </ol>
+                  <ol class="w-[250px] flex justify-between items-center">
                     <li>Qty</li>
                     <li>Subtotal</li>
-                </ol>
+                  </ol>
+                </div>
+                <hr />
               </div>
-              <hr>
-            </div>
-            <hr>
-            <div>
-              <div>
-                <img src="./image/image 11.png" alt="gul rasm bor">
-                <ol>
-                  <li>Barberton Daisy</li>
-                  <li>SKU: 1995751877966</li>
-                </ol>
+              <hr />
+              <div class="flex justify-between w-[80%] flex-wrap">
+                <div class="flex justify-between items-center gap-5">
+                  <img src="./image/image 11.png" alt="gul rasm bor" />
+                  <ol>
+                    <li>Barberton Daisy</li>
+                    <li>SKU: 1995751877966</li>
+                  </ol>
+                </div>
+                <div class="flex justify-between items-center w-[35%]">
+                  <p>(x 2)</p>
+                  <b>$238.00</b>
+                </div>
               </div>
-              <div></div>
+              <div class="flex justify-between w-[80%] flex-wrap">
+                <div class="flex justify-between items-center gap-5">
+                  <img src="./image/image 15.png" alt="gul rasm bor" />
+                  <ol>
+                    <li>Blushing Bromeliad</li>
+                    <li>SKU: 1995751877966</li>
+                  </ol>
+                </div>
+                <div class="flex justify-between items-center w-[35%]">
+                  <p>(x 6)</p>
+                  <b>$834.00</b>
+                </div>
+              </div>
+              <div class="flex justify-between w-[80%] flex-wrap">
+                <div class="flex justify-between items-center gap-5">
+                  <img src="./image/image 16.png" alt="gul rasm bor" />
+                  <ol>
+                    <li>Aluminum Plant</li>
+                    <li>SKU: 1995751877786</li>
+                  </ol>
+                </div>
+                <div class="flex justify-between items-center w-[35%]">
+                  <p>(x 9)</p>
+                  <b>$1,611.00</b>
+                </div>
+              </div>
+              <hr />
             </div>
-            <hr>
           </div>
         </div>
       </div>

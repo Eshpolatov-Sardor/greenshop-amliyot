@@ -34,8 +34,8 @@ module.exports = {
         'body': ['"Open Sans"'], 
     },
   },
+  },
   plugins: [
     
   ]
 }
-
