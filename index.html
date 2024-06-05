@@ -292,54 +292,295 @@
       </div>
     </dialog>
     <button>Show the dialog</button>
-    <div class="container mx-auto p-4">
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h2 class="text-2xl font-bold mb-4">Account Details</h2>
-          <form id="accountDetailsForm">
+    <div class="relative w-full h-[500px] flex ">
+      <div class="w-[25%] text-center mb-6 flex justify-center flex-col ml-20" >
+        <span id="login-toggle1" class="form-toggle text-gray-600 flex  py-2 border-4 items-center"><img  class="w-[30px] h-[30px] ml-2" src="./src/image/my.png" alt="my"><p class="ml-5">Account Details</p></span>
+        <span id="register-toggle1" class="form-toggle text-green-600 font-bold border-4  flex py-2 items-center"><img  class="w-[30px] h-[30px] ml-2" src="./src/image/adress.png" alt="address"><p class="ml-5">Address</p></span >
+        <span id="mIy-toggle2" class="form-toggle flex py-2 items-center "><img class="w-[30px] h-[30px]"  src="./src/image/shopping 1.png" alt="savat"><p class="ml-5">Orders</p></span>
+        <span id="mIy-toggle3" class="form-toggle flex py-2 items-center"><img  class="w-[30px] h-[30px]" src="./src/image/heart 1.png" alt="yurak"><p class="ml-5">Wishlist</p></span>
+        <span id="mIy-toggle4" class="form-toggle flex py-2 items-center"><img  class="w-[30px] h-[30px]" src="./src/image/ikigi.jpg" alt="ikigi"><p class="ml-5">Reports</p></span>
+        <span id="mIy-toggle5" class="form-toggle flex py-2 items-center"><img  class="w-[30px] h-[30px]" src="./src/image/saqlash.png" alt="saqlash"><p class="ml-5">Downloads</p></span>
+        <span id="mIy-toggle6" class="form-toggle flex py-2 items-center"><img  class="w-[30px] h-[30px]" src="./src/image/xato.png" alt="xato"><p class="ml-5">Support</p></span>
+        <span id="mIy-toggle7" class="form-toggle w-full py-2 items-center"><img  src="./src/image/Line 8.png" alt=""></span>
+        <span id="mIy-toggle8" class="form-toggle flex py-2 items-center"><img  class="w-[30px] h-[30px]" src="./src/image/chiqish.png" alt="chiqish"><p class="ml-5 text-orange">Loguot</p></span>
+      </div>
+      <!-- Register Form -->
+      <form id="register-form1" class="px-10 w-full">
+        <div class="container mx-auto p-4">
+          <div class="p-6 rounded-lg ">
+            <h2 class="text-2xl font-bold mb-4">Account Details</h2>
+            <form id="accountDetailsForm">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                      <label for="firstName" class="block text-sm font-medium text-gray-700">First Name</label>
-                      <input type="text" id="firstName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
-                  </div>
-                  <div>
-                      <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name</label>
-                      <input type="text" id="lastName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
-                  </div>
-                  <div>
-                      <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                      <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
-                  </div>
-                  <div>
-                      <label for="phoneNumber" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                      <input type="tel" id="phoneNumber" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
-                  </div>
-                  <div>
-                      <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                      <input type="text" id="username" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
-                  </div>
-                  <div class="flex items-center">
-                      <label for="photo" class="block text-sm font-medium text-gray-700 mr-4">Photo</label>
-                      <input type="file" id="photo" class="mt-1 block">
-                  </div>
+                <div>
+                  <label
+                    for="firstName"
+                    class="text-sm font-medium text-gray-700 flex items-center"
+                    ><p>First Name</p><img src="./src/image/_.png" alt=""></label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="lastName"
+                    class="flex items-center text-sm font-medium text-gray-700"
+                    ><p>Last Name</p><img src="./src/image/_.png" alt=""></label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="flex items-center text-sm font-medium text-gray-700"
+                    ><p>Email Address</p><img src="./src/image/_.png" alt=""></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phoneNumber"
+                    class="flex items-center text-sm font-medium text-gray-700"
+                    ><p>Phone Number</p><img src="./src/image/_.png" alt=""></label
+                  >
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="username"
+                    class="flex items-center text-sm font-medium text-gray-700"
+                    ><p>Username</p><img src="./src/image/_.png" alt=""></label
+                  >
+                  <input
+                    type="text"
+                    id="username"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div class="flex items-center">
+                  <label
+                    for="photo"
+                    class="block text-sm font-medium text-gray-700 mr-4"
+                    >Photo <img src="./src/image/Group 32.png" alt=""></label
+                  >
+                  <input type="file" id="photo" class="mt-1" />
+                </div>
               </div>
               <div class="mt-4">
-                  <h3 class="text-lg font-semibold">Password Change</h3>
-                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div>
-                          <label for="currentPassword" class="block text-sm font-medium text-gray-700">Current Password</label>
-                          <input type="password" id="currentPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                      </div>
-                      <div>
-                          <label for="newPassword" class="block text-sm font-medium text-gray-700">New Password</label>
-                          <input type="password" id="newPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                      </div>
-                      <div>
-                          <label for="confirmNewPassword" class="block text-sm font-medium text-gray-700">Confirm New Password</label>
-                          <input type="password" id="confirmNewPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                      </div>
+                <h3 class="text-lg font-semibold">Password Change</h3>
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-1 w-[50%] ">
+                  <div>
+                    <label
+                      for="currentPassword"
+                      class="block text-sm font-medium text-gray-700"
+                      >Current Password</label
+                    >
+                    <input
+                      type="password"
+                      id="currentPassword"
+                      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    />
                   </div>
+                  <div>
+                    <label
+                      for="newPassword"
+                      class="block text-sm font-medium text-gray-700"
+                      >New Password</label
+                    >
+                    <input
+                      type="password"
+                      id="newPassword"
+                      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="confirmNewPassword"
+                      class="block text-sm font-medium text-gray-700"
+                      >Confirm New Password</label
+                    >
+                    <input
+                      type="password"
+                      id="confirmNewPassword"
+                      class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    />
+                  </div>
+                </div>
               </div>
               <div class="mt-6">
+                <button
+                  type="submit"
+                  class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                >
+                  Save Change
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </form>
+      <!-- Login Form -->
+      <form id="login-form1" class="hidden px-10 w-full">
+        <div class="container mx-auto p-4">
+          <div class=" p-6 rounded-lg w-full">
+            <h2 class="text-2xl font-bold mb-4">Billing Address</h2>
+            <form id="addressForm">
+              <h3 class="text-lg mb-4">The following addresses will be used on the checkout page by default.</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="billingFirstName"
+                    class="block text-sm font-medium text-gray-700"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="billingFirstName"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="billingLastName"
+                    class="block text-sm font-medium text-gray-700"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="billingLastName"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="country"
+                    class="block text-sm font-medium text-gray-700"
+                    >Country / Region</label
+                  >
+                  <select
+                    id="country"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  >
+                    <option>Select a country / region</option>
+                    <!-- Add country options here -->
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="city"
+                    class="block text-sm font-medium text-gray-700"
+                    >Town / City</label
+                  >
+                  <input
+                    type="text"
+                    id="city"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="street"
+                    class="block text-sm font-medium text-gray-700"
+                    >Street Address</label
+                  >
+                  <input
+                    type="text"
+                    id="street"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="state"
+                    class="block text-sm font-medium text-gray-700"
+                    >State</label
+                  >
+                  <select
+                    id="state"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  >
+                    <option>Select a state</option>
+                    <!-- Add state options here -->
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="zip"
+                    class="block text-sm font-medium text-gray-700"
+                    >Zip</label
+                  >
+                  <input
+                    type="text"
+                    id="zip"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="billingEmail"
+                    class="block text-sm font-medium text-gray-700"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="billingEmail"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="billingPhone"
+                    class="block text-sm font-medium text-gray-700"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="billingPhone"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mt-6">
+                <button
+                  type="submit"
+                  class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                >
+                  Save Address
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
     <script src="./src/js/script.js"></script>
   </body>
 </html>

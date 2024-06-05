@@ -19,7 +19,7 @@ closeButton.addEventListener("click", () => {
 });
 
 
-const loginToggle = document.getElementById('login-toggle');
+        const loginToggle = document.getElementById('login-toggle');
         const registerToggle = document.getElementById('register-toggle');
         const loginForm = document.getElementById('login-form');
         const registerForm = document.getElementById('register-form');
@@ -38,4 +38,24 @@ const loginToggle = document.getElementById('login-toggle');
             registerToggle.classList.add('text-green-600', 'font-bold');
             loginToggle.classList.remove('text-green-600', 'font-bold');
             loginToggle.classList.add('text-gray-600');
+        });
+        const loginToggle1 = document.getElementById('login-toggle1');
+        const registerToggle1 = document.getElementById('register-toggle1');
+        const loginForm1 = document.getElementById('login-form1');
+        const registerForm1 = document.getElementById('register-form1');
+
+        loginToggle1.addEventListener('click', () => {
+            loginForm1.classList.remove('hidden');
+            registerForm1.classList.add('hidden');
+            loginToggle1.classList.add('text-green-600', 'font-bold','border-l-emerald-500');
+            registerToggle1.classList.remove('text-green-600', 'font-bold','border-l-emerald-500');
+            registerToggle1.classList.add('text-gray-600');
+        });
+
+        registerToggle1.addEventListener('click', () => {
+            registerForm1.classList.remove('hidden');
+            loginForm1.classList.add('hidden');
+            registerToggle1.classList.add('text-green-600','border-l-emerald-500');
+            loginToggle1.classList.remove('text-green-600','border-l-emerald-500');
+            loginToggle1.classList.add('text-gray-600');
         });
